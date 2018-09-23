@@ -1,0 +1,385 @@
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%;
+  font-family: 'Roboto', sans-serif; }
+
+body {
+  font-size: 1.8rem;
+  width: 100%;
+  box-sizing: border-box; }
+
+nav {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  background-image: linear-gradient(to bottom, #2edc4c, #81f1a1);
+  width: 100vw;
+  box-shadow: .5px 0px 30px #000;
+  z-index: 10; }
+  nav img {
+    margin-top: 1rem; }
+  nav ul {
+    list-style: none; }
+    nav ul li {
+      display: inline-block;
+      padding: 0 2rem; }
+      nav ul li a {
+        text-decoration: none;
+        font-weight: 500; }
+        nav ul li a:visited, nav ul li a:link {
+          color: black;
+          font-weight: bold;
+          letter-spacing: .2rem;
+          transition: all .2s;
+          border-bottom: 1px solid transparent; }
+        nav ul li a:hover {
+          color: white;
+          border-bottom: 1px solid red; }
+  @media screen and (min-width: 320px) {
+    nav {
+      font-size: 1rem;
+      font-weight: 500; }
+    nav img {
+      width: 40px;
+      height: auto; }
+    nav ul > li {
+      padding: 0 1rem; } }
+  @media screen and (min-width: 550px) {
+    nav {
+      font-size: 1.4rem; }
+    nav img {
+      width: 60px;
+      height: auto; } }
+  @media screen and (min-width: 800px) {
+    nav {
+      font-size: 1.6rem; }
+    nav img {
+      width: 90px;
+      height: auto; } }
+  @media screen and (min-width: 1200px) {
+    nav {
+      font-size: 1.8rem; }
+    nav img {
+      width: 100px;
+      height: auto; } }
+
+p::selection {
+  background-color: #e54c10; }
+
+section.hero {
+  background-image: linear-gradient(to top, rgba(255, 255, 255, 0.8), white), url(https://scontent-sof1-1.xx.fbcdn.net/v/t1.0-9/37978443_2226763134218096_5439528530801065984_n.jpg?_nc_cat=109&oh=cb2ae7bc603423ce5df7b1c11cf86058&oe=5C1E65D7);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 20rem;
+  line-height: 1.4;
+  letter-spacing: .3rem; }
+  section.hero h1 {
+    margin-bottom: 2rem;
+    color: #e51e10;
+    font-weight: 900;
+    text-shadow: 2px 2px 1px white, 2px 2px 1px black;
+    font-family: 'Concert One', cursive; }
+  section.hero form input[type="email"] {
+    border-radius: .5rem;
+    outline: 0;
+    border: 2px solid #10e54c;
+    margin: 1rem;
+    background-color: transparent;
+    color: black;
+    transition: all .2s; }
+  section.hero form input[type="email"]:focus {
+    background-color: #e54c10;
+    border: 2px solid #e54c10; }
+  section.hero form input[type="email"]::placeholder {
+    color: black; }
+  section.hero form input[type="submit"] {
+    border-radius: .5rem;
+    border: 1px solid #10e54c;
+    outline: 0;
+    background-image: linear-gradient(to bottom, #10e54c, #81f1a1);
+    color: black;
+    cursor: pointer;
+    transition: all .2s; }
+  section.hero form input[type="submit"]:hover {
+    box-shadow: 0px 10px 20px black;
+    transform: translateY(-0.5rem); }
+  section.hero form input[type="submit"]:active {
+    box-shadow: 0px 5px 10px black;
+    transform: translateY(0); }
+  @media screen and (min-width: 320px) {
+    section.hero {
+      padding: 6rem; }
+    section.hero > h1 {
+      font-size: 3rem; }
+    section.hero > p {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 2rem;
+      color: black; }
+    section.hero > form > input[type="email"] {
+      padding: .5rem;
+      width: 20rem; }
+    section.hero > form > input[type="submit"] {
+      padding: .5rem;
+      width: 20rem; } }
+  @media screen and (min-width: 550px) {
+    section.hero {
+      padding-top: 12rem; }
+    section.hero > h1 {
+      font-size: 4rem; }
+    section.hero > p {
+      font-size: 2rem;
+      margin-bottom: 2rem; }
+    section.hero > form > input[type="email"] {
+      padding: 1rem;
+      width: 30rem; }
+    section.hero > form > input[type="submit"] {
+      padding: 1rem;
+      width: 30rem;
+      font-size: 1.5rem; } }
+  @media screen and (min-width: 800px) {
+    section.hero {
+      padding: 15rem; }
+    section.hero > h1 {
+      font-size: 5rem; }
+    section.hero > p {
+      font-size: 2rem;
+      margin-bottom: 4rem; }
+    section.hero > form > input[type="email"] {
+      padding: 1.5rem;
+      width: 40rem; }
+    section.hero > form > input[type="submit"] {
+      padding: 1.5rem;
+      width: 40rem; } }
+  @media screen and (min-width: 1200px) {
+    section.hero {
+      padding: 20rem; }
+    section.hero > h1 {
+      font-size: 6rem; }
+    section.hero > p {
+      font-size: 3rem;
+      margin-bottom: 6rem; }
+    section.hero > form > input[type="email"] {
+      padding: 2rem;
+      width: 50rem;
+      font-size: 2rem; }
+    section.hero > form > input[type="submit"] {
+      padding: 2rem;
+      width: 25rem;
+      font-size: 2rem; } }
+
+h2 {
+  text-align: center;
+  background-color: black;
+  color: white;
+  letter-spacing: .5rem; }
+  @media screen and (min-width: 320px) {
+    h2 {
+      padding: 2rem;
+      font-size: 2rem; } }
+  @media screen and (min-width: 550px) {
+    h2 {
+      padding: 3rem;
+      font-size: 2.5rem; } }
+  @media screen and (min-width: 800px) {
+    h2 {
+      padding: 4rem;
+      font-size: 3rem; } }
+  @media screen and (min-width: 1200px) {
+    h2 {
+      padding: 5rem;
+      font-size: 4rem; } }
+
+section.services {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 3rem;
+  background-image: linear-gradient(to top, rgba(16, 229, 76, 0.8), rgba(129, 241, 161, 0.8)), url(https://ak0.picdn.net/shutterstock/videos/917260/thumb/1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 5rem;
+  text-align: center; }
+  section.services a:link, section.services a:visited {
+    text-decoration: none;
+    font-weight: 700;
+    color: white;
+    text-shadow: 1px 1px 5px black; }
+  section.services a:hover {
+    text-decoration: none;
+    color: white; }
+  section.services article {
+    margin: 0 auto;
+    width: 50%;
+    transition: all .2s;
+    outline: 0;
+    box-shadow: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 1rem;
+    padding: 1rem;
+    color: black; }
+  section.services article:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 10px 20px black;
+    background-color: black;
+    border-radius: 1rem;
+    color: white; }
+  section.services article i {
+    color: #e54c10;
+    text-shadow: 1px 1px 1px black; }
+  @media screen and (min-width: 320px) {
+    section.services {
+      grid-template-columns: auto; }
+    section.services article {
+      width: 100%; }
+    section.services article > * {
+      margin-top: 1rem;
+      margin-bottom: 1rem; }
+    section.services article i {
+      font-size: 4rem; } }
+  @media screen and (min-width: 550px) {
+    section.services {
+      grid-template-columns: auto auto;
+      grid-gap: 6rem; }
+    section.services article i {
+      font-size: 5rem; } }
+  @media screen and (min-width: 800px) {
+    section.services {
+      grid-template-columns: auto;
+      grid-gap: 8rem; }
+    section.services article {
+      width: 50%; }
+    section.services article > h3 > a {
+      font-size: 2.5rem; }
+    section.services article > p {
+      font-size: 2rem; }
+    section.services article i {
+      font-size: 6rem; } }
+  @media screen and (min-width: 1200px) {
+    section.services {
+      grid-template-columns: auto auto;
+      grid-gap: 10rem; }
+    section.services article i {
+      font-size: 7rem; } }
+
+section.video {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center; }
+
+section.pricing {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 3rem;
+  padding: 5rem;
+  background-image: linear-gradient(to top, rgba(16, 229, 76, 0.8), rgba(129, 241, 161, 0.8)), url(https://ak0.picdn.net/shutterstock/videos/917260/thumb/1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed; }
+  section.pricing article {
+    padding: 2rem;
+    text-align: center;
+    line-height: 1.5;
+    margin: 0 auto;
+    width: 50%;
+    transition: all .2s;
+    box-shadow: 0px .2px 0px black;
+    background-color: rgba(255, 255, 255, 0.2);
+    outline: 0;
+    box-shadow: none; }
+    section.pricing article:hover {
+      transform: scale(1.1);
+      box-shadow: 0px 10px 20px black;
+      background-color: rgba(255, 255, 255, 0.2);
+      border-radius: 1rem; }
+    section.pricing article a:link, section.pricing article a:visited {
+      text-decoration: none;
+      font-weight: 700;
+      color: #e54c10;
+      transition: all .4s;
+      border-bottom: 1px solid transparent; }
+    section.pricing article a:hover {
+      color: white;
+      border-bottom: 1px solid #e54c10; }
+    section.pricing article i {
+      color: #e54c10; }
+  @media screen and (min-width: 320px) {
+    section.pricing {
+      grid-template-columns: auto;
+      grid-gap: 3rem;
+      padding: 1.5rem; }
+    section.pricing article {
+      width: 100%; }
+    section.pricing article > * {
+      margin-top: 1rem;
+      margin-bottom: 1rem; }
+    section.pricing article > p {
+      font-size: 1.3rem; }
+    section.pricing article > a {
+      font-size: 1.4rem; }
+    section.pricing i {
+      font-size: 4rem; } }
+  @media screen and (min-width: 550px) {
+    section.pricing {
+      grid-template-columns: auto;
+      grid-gap: 6rem;
+      padding: 2.5rem; }
+    section.pricing article > p {
+      font-size: 1.5rem; }
+    section.pricing article > a {
+      font-size: 1.6rem; }
+    section.pricing i {
+      font-size: 5rem; } }
+  @media screen and (min-width: 800px) {
+    section.pricing {
+      grid-template-columns: auto;
+      grid-gap: 8rem;
+      padding: 3.5rem; }
+    section.pricing article > p {
+      font-size: 1.7rem; }
+    section.pricing article > a {
+      font-size: 1.8rem; }
+    section.pricing i {
+      font-size: 6rem; } }
+  @media screen and (min-width: 1200px) {
+    section.pricing {
+      grid-template-columns: auto auto;
+      grid-gap: 10rem;
+      padding: 4.5rem; }
+    section.pricing article > p {
+      font-size: 2rem; }
+    section.pricing article > a {
+      font-size: 2rem; }
+    section.pricing i {
+      font-size: 7rem; } }
+
+footer.footer {
+  display: grid;
+  grid-template-columns: auto;
+  text-align: center;
+  background-color: #111;
+  padding: 2rem;
+  color: white; }
+  @media screen and (min-width: 320px) {
+    footer.footer > * {
+      font-size: 1.5rem; } }
+  @media screen and (min-width: 550px) {
+    footer.footer > * {
+      font-size: 2rem; } }
+  @media screen and (min-width: 800px) {
+    footer.footer > * {
+      font-size: 2.2rem; } }
+  @media screen and (min-width: 1200px) {
+    footer.footer > * {
+      font-size: 2.5rem; } }
+
+/*# sourceMappingURL=style.css.map */
